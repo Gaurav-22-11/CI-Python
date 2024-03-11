@@ -13,7 +13,7 @@ async def read_data():
 @app.get("/{guid}")
 async def read_data_by_guid(guid: str):
   for item in data:
-    if item["guid"]==guid
+    if item["guid"]==guid:
       return item
   raise HTTPException(status_code=404, detail="Item not Found")
   
