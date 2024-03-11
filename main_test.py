@@ -7,7 +7,7 @@ class TestApp(unittest.Testcase):
   def setUp(self):
     self.client=TestClient(app)
     with open("data.json","r") as f:
-      self.data=json.load(f):
+      self.data=json.load(f)
 
   def test_read_data(self):
     response=self.client.get("/")
