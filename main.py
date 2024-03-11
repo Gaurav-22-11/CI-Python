@@ -3,7 +3,7 @@ import json
 
 app=FastAPI()
 
-with open("data.json","r"):
+with open("data.json","r") as f:
   data=json.load(f)
 
 @app.get("/")
